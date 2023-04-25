@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+        
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas sao:
+            cm, mm, in(polegada), px(pixel), pt(ponto),pc(Paica) 
+            
+            
+            Medidas Relativas:
+            em(medida relativa ao tamanho atual da fonte), ex (relativa a altura x), rem (relativo a fonte configurada no body (root)), VW ((View Width)tamanho da tela(View Port)porcentagem da view port),
+            vh (Altura da view port), % (porcentagem)
+            16px geralmente= 1 em.
+            Recomendação oficial W3C: Usar px e/ou em.
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+            /*lighter normal bold bolder*/
+        }
+
+        h1, {
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family (sempre seguir essa ordem! Dessa maneira nao se utiliza quatro linhas como no exemplo abaixo:
+
+            font-family:'Work Sans', sans-serif;
+            font-wight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        } 
+        
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam esse placeat nam nihil quo et voluptatibus! Tenetur quas fugit quos molestiae, ipsa sequi quae aspernatur esse in exercitationem dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste adipisci deserunt animi, fugit voluptatibus doloremque enim velit, harum, quaerat sapiente ipsum vitae possimus mollitia quas excepturi saepe reprehenderit esse voluptates!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat aliquid id explicabo commodi molestias illum nulla, rem sequi dolore quae voluptatem veniam at deleniti blanditiis laboriosam assumenda est. Sunt?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil temporibus obcaecati provident sit, voluptas deserunt nostrum quaerat deleniti impedit, sequi pariatur dolores. Fuga maiores soluta vero ut, ab ullam velit.</p>
+    
+</body>
+</html>
