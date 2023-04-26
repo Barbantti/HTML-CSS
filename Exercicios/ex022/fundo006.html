@@ -7,11 +7,26 @@
     <title>Document</title>
     <style>
         body {
-            height: 100vh;
+            height: 100vh;    
+
+            /*
+            Background sem shorthand:
+
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-size: cover;
+            background-attachment: fixed;
+
+            Background com shorthand:
+
+            background color > image (url)> repeat > [size] > attachment
+
+            OBS: Segundo documento do W3C o [size] funciona na ordem descrita acima porem ainda nao esta funcionando nos navegadores, então deve-se colocar sem a shorthand conforme abaixo.
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center repeat-y fixed;
             background-size: cover;
         }
 
@@ -28,7 +43,7 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed omnis aliquid, harum quibusdam et blanditiis nulla quasi qui alias delectus reiciendis quod, deserunt atque non quam dolore eaque nobis temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum similique adipisci, quos fugiat voluptates labore exercitationem porro tempora illum repellat consequatur eveniet sunt commodi repudiandae laudantium vero voluptas! Qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint culpa, nulla tempore earum temporibus ad, eos praesentium dicta et perferendis ut at repudiandae beatae provident tempora dolorum exercitationem nostrum hic.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed omnis aliquid, harum quibusdam et blanditiis nulla quasi qui alias delectus reiciendis quod, deserunt atque non quam dolore eaque nobis temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum similique adipisci, quos fugiat voluptates labore exercitationem porro tempora illum repellat consequatur eveniet sunt commodi repudiandae laudantium vero voluptas! Qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint culpa, nulla tempore earum temporibus ad, eos praesentium dicta et perferendis ut at repudiandae beatae provident tempora dolorum exercitationem nostrum hic.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed omnis aliquid, harum quibusdam et blanditiis nulla quasi qui alias delectus reiciendis quod, deserunt atque non quam dolore eaque nobis temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum similique adipisci, quos fugiat voluptates labore exercitationem porro tempora illum repellat consequatur eveniet sunt commodi repudiandae laudantium vero voluptas! Qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint culpa, nulla tempore earum temporibus ad, eos praesentium dicta et perferendis ut at repudiandae beatae provident tempora dolorum exercitationem nostrum hic.</p>
     </main>
 </body>
 </html>
